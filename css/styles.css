@@ -5,42 +5,66 @@
   src: url("/fonts/PTSerif-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'PTSerif';
   src: url("/fonts/PTSerif-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'PTSans';
   src: url("/fonts/PTSans-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'PTSans';
   src: url("/fonts/PTSans-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Raleway';
   src: url("/fonts/Raleway-Medium.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Raleway';
   src: url("/fonts/Raleway-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Raleway';
   src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
 	font-weight: 800;
 	font-style: normal;
+	font-display: swap;
+}
+
+
+
+/* CSS VARIABLES */
+
+:root {
+	/* Colors */
+	--color-background: #FFFFFF;
+	--color-text-dark: #111111;
+	--color-text-body: #333333;
+	--color-link: #50ADB1;
+	--color-link-hover: #E2287D;
+
+	/* Typography */
+	--font-heading: "Raleway", Arial, sans-serif;
+	--font-body: "PTSerif", Arial, sans-serif;
 }
 
 
@@ -58,7 +82,7 @@ html {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: var(--color-background);
   margin: 0;
 }
 
@@ -67,19 +91,19 @@ body {
 /* TEXT ELEMENTS */
 
 h1 {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-size: 4rem;
 	line-height: 5rem;
-  color: #111111;
+  color: var(--color-text-dark);
   font-weight: 800;
 	padding-bottom: 1rem;
 }
 
 p {
-  font-family: "PTSerif", Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 1.25rem;
 	line-height: 1.75rem;
-  color: #333333;
+  color: var(--color-text-body);
   font-weight: 400;
 	padding-bottom: 1rem;
 }
@@ -92,15 +116,15 @@ p.emoji {
 }
 
 a {
-	font-family: "PTSerif", Arial, sans-serif;
-	color: #50ADB1;
+	font-family: var(--font-body);
+	color: var(--color-link);
 	font-weight: 400;
   text-decoration: none;
 	transition: color ease-in-out 0.5s;
 }
 
 a:hover {
-	color: #E2287D;
+	color: var(--color-link-hover);
 
 }
 
