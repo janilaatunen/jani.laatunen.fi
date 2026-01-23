@@ -72,6 +72,10 @@ h1 {
 	padding-bottom: 1rem;
 }
 
+h1 .croissant {
+	font-size: 0.85em;
+}
+
 p {
   font-family: var(--font-body);
   font-size: 1.2rem;
